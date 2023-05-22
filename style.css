@@ -1,0 +1,33 @@
+/*
+LIGHT SHADES: #F5F0DE
+LIGHT ACCENT: #C0B986
+MAIN COLOR: #8D8639
+DARK ACCENT: #786A4D
+DARK SHADE: #7C7553
+*/
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 10%;
+    background-color: #F5F0DE;
+}
+
+/*name*/
+h1{
+    font-size: 100px;
+    text-transform: capitalize;
+    color: #7C7553;
+}
+
+#intro{
+    margin-top: 50vh;
+}
