@@ -61,12 +61,14 @@ a{
 
 #intro h1{
     animation: 2s anim-lineUp ease-out;
+    padding-bottom:5px;
 }
 
 #intro h4{
     color:#7C7553;
     padding-left: 10px;
     font-weight: 500;
+    font-size: 20px;
     animation: 4s anim-lineUp ease-out;
 }
 /*anim keyframes */
