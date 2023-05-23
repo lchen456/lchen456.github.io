@@ -13,21 +13,133 @@ DARK SHADE: #7C7553
 }
 
 body{
-
-    width: 80%;
-    height: 70vh;
+    width: 100%;
+    height: 100vh;
     margin: auto;
-    margin-top: 10%;
+
     background-color: #F5F0DE;
+    text-align: center;
+    font-size:18px;
+}
+
+
+h1{
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #7C7553;
+    font-weight:600;
+}
+h2{
+    font-size: 75px;
+    text-transform: uppercase;
+    color: #7C7553;
+    font-weight: 700;
+}
+h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    color:#7C7553;
+    font-weight: 600;
+}
+a{
+    color:#F5F0DE;
+}
+.brandcolor{
+    color: #8D8639;
 }
 
 /*name*/
-h1{
-    font-size: 100px;
-    text-transform: capitalize;
-    color: #7C7553;
+
+  
+#intro{
+    padding-top: 50vh;
+    text-align: left;
+    height: 100vh;
+    padding-left: 1%;
+    position: relative;
 }
 
-#intro{
-    margin-top: 50vh;
+#intro h1{
+    animation: 2s anim-lineUp ease-out;
+}
+
+#intro h4{
+    color:#7C7553;
+    padding-left: 10px;
+    font-weight: 500;
+    animation: 4s anim-lineUp ease-out;
+}
+/*anim keyframes */
+
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+/*Projects*/
+#projects{
+    padding: 5%;
+    margin: auto;
+    background-color: #7C7553;
+    /*consider using scroll event to do animation fade in*/
+}
+
+#projects h3{
+    margin-bottom: 10px;
+    color:#F5F0DE;
+}
+
+.project_show{
+    width:80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.box_img{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    height:30vh;
+    width: 50%;
+    border-radius: 4%;
+    margin:5px;
+}
+
+#box1{
+    background-image: url(https://raw.githubusercontent.com/lchen456/gamejamgang/main/game/images/title_2.PNG);
+}
+#box2{
+    background-image: url(GiftMe.jpg);
+}
+#box3{
+    background-image: url(odyssea.PNG);
+}
+
+.text{
+    color: #F5F0DE;
+    text-align: center;
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 4%;
+    opacity: 0;
+    padding-top: 10vh;
+    height: 100%;
+    width: 100%;
+}
+
+.box_img:hover .text{
+    opacity:1
 }
