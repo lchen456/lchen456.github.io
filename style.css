@@ -20,6 +20,7 @@ body{
     background-color: #F5F0DE;
     text-align: center;
     font-size:18px;
+
 }
 
 /*HORIZONTAL NAV MENU*/
@@ -60,7 +61,7 @@ h2{
     font-size: 75px;
     text-transform: uppercase;
     color: #7C7553;
-    font-weight: 700;
+    font-weight: 600;
 }
 h3{
     font-size: 40px;
@@ -85,6 +86,11 @@ h3{
 }
 
 #intro h1{
+    animation: 2s anim-lineUp ease-out;
+    padding-bottom:5px;
+}
+
+#intro h2{
     animation: 2s anim-lineUp ease-out;
     padding-bottom:5px;
 }
