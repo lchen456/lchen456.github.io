@@ -141,7 +141,7 @@ h3{
     padding: 5%;
     margin: auto;
     background-color: #7C7553;
-    height: 80vh;
+    height: 100vh;
     /*consider using scroll event to do animation fade in*/
 }
 
@@ -156,7 +156,7 @@ h3{
 }
 
 .project_show{
-    width:80%;
+    width:60%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -185,6 +185,9 @@ h3{
 }
 #box3{
     background-image: url(odyssea.PNG);
+}
+#box4{
+    background-image: url(profilecode.PNG);
 }
 
 .text{
