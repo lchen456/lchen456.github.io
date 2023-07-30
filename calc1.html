@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Chen | Calculator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Gluten:wght@600&family=Parisienne&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="calc_style1.css">
+        <script>
+            function add(){
+                let sum;
+                let input1 = Number( document.getElementById("box1").value);
+                let input2 = Number(document.getElementById("box2").value);
+                sum = input1 + input2;
+                document.getElementById("box3").innerHTML = sum;
+                isNegative(sum);
+            }
+
+            function subtract(){
+                let difference;
+                let input1 = Number(document.getElementById("box1").value);
+                let input2 = Number(document.getElementById("box2").value);
+                difference = input1 - input2;
+                document.getElementById("box3").innerHTML = difference;
+                isNegative(difference);
+            }
+
+            function multiply(){
+                let product;
+                let input1 = Number(document.getElementById("box1").value);
+                let input2 = Number(document.getElementById("box2").value);
+                product = input1*input2;
+                document.getElementById("box3").innerHTML = product;
+                isNegative(product);
+            }
+
+            function divide(){
+                let quotient;
+                let input1 = Number(document.getElementById("box1").value);
+                let input2 = Number(document.getElementById("box2").value);
+                quotient = input1/input2;
+                document.getElementById("box3").innerHTML= quotient;
+                isNegative(quotient);
+            }
+
+            function power(){
+                let power = 1;
+                let input1 = Number(document.getElementById("box1").value);
+                let input2 = Number(document.getElementById("box2").value);
+                for(var i= 1; i <= input2; i= i+1){
+                    power = power*input1;
+                }
+                document.getElementById("box3").innerHTML = power;
+                isNegative(power);
+            }
+
+            function doClear(){
+                document.getElementById("box1").value = " ";
+                document.getElementById("box2").value = " ";
+                document.getElementById("box3").innerHTML = " ";
+           
+           }
+
+           function isNegative(n){
+                if(n<0){
+                    document.getElementById("box3").style.color = "red";
+                }
+                else{
+                    document.getElementById("box3").style.color = "";
+                }
+           }
+                
+        </script>
+    </head>
+
+    <body>
+        <div id="page-wrapper">
+            <h1>Calculator</h1>
+            
+            <div id="paw">
+                <input type="text" value=" " id="box1" class="inputs">
+                <input type="text" value=" " id="box2" class="inputs">
+                <button type="button" onclick="doClear()" id="clearB"> clear </button> 
+                <p id="box3"></p>
+            </div>
+
+            <div id = "buttons">
+                <button type="button" onclick="add()"> + </button>
+                <br> 
+                <button type="button" onclick="subtract()"> - </button> 
+                <br> 
+                <button type="button" onclick="multiply()"> * </button> 
+                <br> 
+                <button type="button" onclick="divide()"> / </button> 
+                <br> 
+                <button type="button" onclick="power()"> ^ </button>
+       
+            </div>
+        </div>
+    </body>
+</html>

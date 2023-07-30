@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Chen | Calculator</title>
+        <!--css-->
+        <link rel = "stylesheet" type="text/css" href="calc_style2.css">
+        <!--js-->
+        <script src="calc2.js"></script> 
+
+    </head>
+
+    <body>
+        <div id="calculator">
+
+            <div id="text">
+                <!--expression-->
+                <p id="expression"></p>
+                <!--result-->
+                <p id="result"></p>
+            </div>
+
+
+            <div id="calc_container">
+                <!--first row-->
+                <button class = "item num" type="button" value="1" onclick="getNum('b1')" id='b1'>1</button>
+                <button class = "item num" type="button" value="2" onclick="getNum('b2')" id="b2">2</button>
+                <button class = "item num" type="button" value="3" onclick="getNum('b3')" id="b3">3</button>
+                <button class = "item num" type="button" value="4" onclick="getNum('b4')" id="b4">4</button>
+                <!--second row-->
+                <button class = "item num" type="button" value="5" onclick="getNum('b5')" id="b5">5</button>
+                <button class = "item num" type="button" value="6" onclick="getNum('b6')" id="b6">6</button>
+                <button class = "item num" type="button" value="7" onclick="getNum('b7')" id="b7">7</button>
+                <button class = "item num" type="button" value="8" onclick="getNum('b8')" id="b8">8</button>
+
+                <!--third row-->
+                <button class = "item num" type="button" value="9" onclick="getNum('b9')" id="b9">9</button>
+                <button class = "item num" type="button" value="0" onclick="getNum('b0')" id="b0">0</button>
+                <button class = "item" type="button" onclick="getOp('+')">+</button>
+                <button class = "item" type="button" onclick="getOp('-')">-</button>
+
+                <!--4th row-->
+                <button class = "item" type="button" onclick="doClear()"> clear</button>
+                <button class = "item" type="button" onclick="getOp('*')">x</button>
+                <button class = "item" type="button" onclick="getOp('/')">&divide</button>
+                <button class = "item" type="button" onclick="doCalc()">=</button>
+
+            </div>
+        </div>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gluten', cursive;
+}
+
+#page-wrapper{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    padding: 2% 0;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+button{
+    width: 50px;
+    height: 50px;
+    margin-top: 0;
+    padding: 2%;
+    background-color:pink;
+    border: none;
+    border-radius: 50%;
+    margin: 1px;
+
+}
+button:hover{
+    background-color:lemonchiffon;
+}
+.inputs{
+    width: 100px;
+    height: 100px;
+    font-size: calc(15px + 1vh);
+    text-align: center;
+    border-radius: 50%;
+    background-color: pink;
+    padding: 1% 0;
+    border: none;
+}
+
+#box1{
+    position: relative;
+    left:0;
+    top: 50px;
+}
+#clearB{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: lightblue;
+    padding: 1% 0;
+    border: none;
+    position: relative;
+    right:0;
+    top: 50px;
+}
+#box3{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    padding: 2%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-top: 9vh;
+    background-color: lightyellow;
+    border-radius: 50%;
+    font-size: calc(50px + 2vh);
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: "";
+}
+
+@media screen and (max-width:640px){
+    .inputs{
+        width: 60px;
+        height: 60px;
+        font-size: calc(8px + 1vh);
+    }
+
+    #box2{
+        position: relative;
+        top: 10px;
+    }
+    #clearB{
+        width: 60px;
+        height: 60px;
+    }
+    p#box3{
+        width: 150px;
+        height: 150px;
+        margin-top: 30px;
+        font-size: calc(20px + 2vh);
+    }
+}
+
